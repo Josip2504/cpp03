@@ -14,8 +14,9 @@
 
 int	main() {
 	ClapTrap robot("Robot");
+	ClapTrap human("Tom");
 
-	robot.attack("targer");
+	robot.attack(human.getName());
 	robot.takeDamage(5);
 	robot.beRepaired(3);
 

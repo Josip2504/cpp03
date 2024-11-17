@@ -72,3 +72,35 @@ void	ClapTrap::beRepaired(int amount) {
 	else
 		std::cout << "ClapTrap " << name << " cannot repair!" << std::endl;
 }
+
+std::string ClapTrap::getName() const {
+	return name;
+}
+
+int	ClapTrap::getHitPoints() const {
+	return hitPoints;
+}
+
+int	ClapTrap::getEnergyPoints() const {
+	return energyPoints;
+}
+
+int	ClapTrap::getAttackDamage() const {
+	return attackDamage;
+}
+
+void	ClapTrap::setName(const std::string& name) {
+	this->name = name;
+}
+
+void	ClapTrap::setHitPoints(int hitPoints) {
+	this->hitPoints = hitPoints;
+}
+
+void	ClapTrap::setEnergyPoints(int energyPoints) {
+	this->energyPoints = energyPoints;
+}
+
+void	ClapTrap::setAttackDamage(int attackDamage) {
+	this->attackDamage = attackDamage;
+}
